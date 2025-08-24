@@ -6,4 +6,16 @@ states_of_america = ["Delaware", "Pennsylvania", "New Jersey", "Georgia", "Conne
                      "North Dakota", "South Dakota", "Montana", "Washington", "Idaho", "Wyoming", "Utah", "Oklahoma",
                      "New Mexico", "Arizona", "Alaska", "Hawaii"]
 
-print(states_of_america)
+# count number of items in a list
+number_of_states = len(states_of_america)
+print(number_of_states)
+
+print(states_of_america[number_of_states - 1]) # Hawaii is 49 and not 50 on the list
+
+# nested lists
+fruits = ["Cherry", "Apple", "Pear"]
+veg = ["Cucumber", "Kale", "Spinnach"]
+fruits_and_veg = [fruits, veg]
+print(fruits_and_veg) # 2 items in list but each item has its own list
+
+print(fruits_and_veg[1][1]) # prints the 2nd item (index 1) of the 2nd item in that list (also index 1)
